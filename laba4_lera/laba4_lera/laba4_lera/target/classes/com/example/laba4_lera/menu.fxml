@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="906.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.laba4_lera.Controllers.MenuController">
+   <children>
+      <ImageView fitHeight="792.0" fitWidth="906.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.7;">
+         <image>
+            <Image url="@1637787573_3-hdpic-club-p-passazhirskikh-poezdov-rossii-3.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="601.0" prefWidth="222.0" style="-fx-background-color: gray; -fx-opacity: 0.8;">
+         <children>
+            <Button fx:id="basketWelcome" layoutX="39.0" layoutY="516.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="109.0" style="-fx-background-color: #757272;" text="Оплатить" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="addProduct" layoutX="39.0" layoutY="450.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="109.0" style="-fx-background-color: white;" text="Добавить" />
+            <TableView fx:id="basket" layoutX="7.0" layoutY="95.0" prefHeight="200.0" prefWidth="208.0">
+              <columns>
+                <TableColumn prefWidth="99.0" text="Номер " />
+                <TableColumn prefWidth="108.0" text="Стоимость" />
+              </columns>
+            </TableView>
+            <Label layoutX="46.0" layoutY="39.0" text="КОРЗИНА" textFill="#fcf8f8">
+               <font>
+                  <Font name="Mistral" size="34.0" />
+               </font>
+            </Label>
+            <Button fx:id="deleteProduct" layoutX="39.0" layoutY="400.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="109.0" style="-fx-background-color: white;" text="Удалить" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="322.0" layoutY="13.0" prefHeight="70.0" prefWidth="265.0" text="Каталог" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="59.0" />
+         </font>
+      </Label>
+      <TableView fx:id="TableViewProduct" layoutX="238.0" layoutY="140.0" prefHeight="440.0" prefWidth="499.0" style="-fx-background-color: white;">
+        <columns>
+          <TableColumn prefWidth="136.0" style="-fx-background-color: white;" text="Номер поезда" />
+          <TableColumn prefWidth="94.0" style="-fx-background-color: white;" text="Стоимость" />
+            <TableColumn prefWidth="157.0" style="-fx-background-color: white;" text="Дата и время" />
+            <TableColumn prefWidth="111.0" style="-fx-background-color: white;" text="Путь" />
+        </columns>
+      </TableView>
+      <Button fx:id="ButtonExit" layoutX="749.0" layoutY="508.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="109.0" style="-fx-background-color: gray; -fx-opacity: 0.8;" text="Выйти" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label fx:id="labelList" layoutX="238.0" layoutY="593.0" prefHeight="21.0" prefWidth="470.0" text=" " />
+      <Label fx:id="helloLabel" layoutX="322.0" layoutY="110.0" prefHeight="21.0" prefWidth="416.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
